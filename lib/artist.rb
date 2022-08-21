@@ -26,10 +26,12 @@ class Artist
   def self.count
     self.all.count
   end
+  #try
 
   def add_song(song)
     @songs << song
     song.artist = self
+
   end
 
   def add_songs(songs)
